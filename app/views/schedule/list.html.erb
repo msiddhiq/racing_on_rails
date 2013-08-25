@@ -11,7 +11,8 @@
   <thead>
     <tr>
       <th class="date">Date</th>
-      <th></th>
+      <th class="star"></th>
+      <th class="beginner_friendly"></th>
       <th>Event</th>
       <th class="promoter">Promoter</th> 
       <th class="phone">Phone</th>
@@ -24,6 +25,13 @@
   <tr>
     <td class="date">
       <%= event.date.strftime("%a %-m/%-d") if event.date -%>
+    </td>
+    <td class="star">
+      <% if rand > 0.1 %>
+      <i class="icon-star-empty event_star"></i>
+      <% else %>
+      <i class="icon-star event_star"></i>
+      <% end %>
     </td>
     <td class="beginner_friendly"><% if event.beginner_friendly? %><i class="icon-ok-circle"></i><% end %></td>
     <%- if event.cancelled %>

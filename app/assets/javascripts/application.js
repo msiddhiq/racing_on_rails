@@ -5,6 +5,7 @@
  *= require jquery.jeditable
  *= require bootstrap
  *= require bootstrap-datepicker/core
+ *= require stars
  *= require_self
 */
 function autoComplete(model, attribute, path) {
