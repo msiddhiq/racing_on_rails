@@ -42,6 +42,7 @@ gem "json", ">= 1.7.7"
 gem "nokogiri"
 gem "skylight"
 gem "chronic", "< 0.10.0"
+gem "js-routes"
 
 group :assets do
   gem "sass-rails",   "~> 3.2"

@@ -5,6 +5,7 @@
  *= require jquery.jeditable
  *= require bootstrap
  *= require bootstrap-datepicker/core
+ *= require js-routes
  *= require stars
  *= require_self
 */

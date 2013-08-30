@@ -6,6 +6,7 @@ module RacingOnRails
       private
 
       def require_current_person
+        p "require_current_person #{current_person}"
         unless current_person
           flash[:notice] = "Please login to your #{RacingAssociation.current.short_name} account"
           store_location_and_redirect_to_login

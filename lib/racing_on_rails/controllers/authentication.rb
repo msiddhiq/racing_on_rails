@@ -21,7 +21,7 @@ module RacingOnRails
 
       def current_person
         return @current_person if defined?(@current_person)
-        @current_person = current_person_session && current_person_session.person
+        @current_person = current_person_session.try(:person)
       end
 
       def store_location_and_redirect_to_login

@@ -169,6 +169,11 @@ FactoryGirl.define do
     name "Administrator"
   end
   
+  factory :star do
+    event
+    association :person, :factory => :person_with_login
+  end
+  
   factory :result do
     sequence :place
     race

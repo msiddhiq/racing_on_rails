@@ -1,0 +1,28 @@
+jQuery(document).ready(function() {
+  jQuery('i.star').click(function() {
+    toggleStar(this);
+  });
+  toggleAllStars();
+});
+
+function toggleStar(star) {
+  var star = jQuery(star);
+  if (star.hasClass('icon-star-empty')) {
+    star.removeClass('icon-star-empty');
+    star.addClass('icon-star');
+    <% if RacingAssociation.current.ssl? %>
+    var urlPrefix = 'https://' + document.location.hostname;
+    <% else %>
+    var urlPrefix = '';
+    <% end %>
+    jQuery.post(urlPrefix + Routes.stars_path({format: 'json'}), { '[star]event_id': star.data('event-id') })
+  }
+  else {
+    star.addClass('icon-star-empty');
+    star.removeClass('icon-star');
+  }
+}
+
+function toggleAllStars() {
+  var ids = jQuery.get(Routes.stars_path({format: 'json'}));
+}

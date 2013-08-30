@@ -27,11 +27,7 @@
       <%= event.date.strftime("%a %-m/%-d") if event.date -%>
     </td>
     <td class="star">
-      <% if rand > 0.1 %>
-      <i class="icon-star-empty event_star"></i>
-      <% else %>
-      <i class="icon-star event_star"></i>
-      <% end %>
+      <i class="icon-star-empty star" data-event-id="<%= event.id %>"></i>
     </td>
     <td class="beginner_friendly"><% if event.beginner_friendly? %><i class="icon-ok-circle"></i><% end %></td>
     <%- if event.cancelled %>

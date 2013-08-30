@@ -226,6 +226,8 @@ module Schedule
           query = query.where(:region_id => params[:region].id)
         end
       end
+      
+      query = query.includes(:promoter)
 
       Schedule.new(params[:year], query.all)
     end

@@ -49,6 +49,7 @@ class Person < ActiveRecord::Base
   has_many :results
   has_and_belongs_to_many :roles
   has_many :sent_editor_requests, :foreign_key => "editor_id", :class_name => "EditorRequest", :dependent => :destroy
+  has_many :stars
   belongs_to :team
   
   attr_accessor :year
