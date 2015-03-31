@@ -3,7 +3,7 @@
 /* Home */
 .home {
   img.hero_photo {
-    margin-bottom: $line-height-computed / 2;
+    margin-bottom: 16 / 2;
   }
 
   ul li {
@@ -11,13 +11,13 @@
   }
 
   .associated {
-    margin-bottom: $line-height-computed;
+    margin-bottom: 16;
     text-align: center;
     vertical-align: middle;
   }
 
   .ad {
-    padding-bottom: $line-height-computed;
+    padding-bottom: 16;
     width: 100%;
   }
 }
@@ -57,7 +57,7 @@ table td.delete_all_races {
 }
 
 #event_notes {
-  height: $line-height-computed * 4;
+  height: 16 * 4;
 }
 
 /* Calendar of events */
@@ -79,7 +79,6 @@ tr.month {
   height: 100px;
   width: 14%;
   min-width: 14%;
-  background-color: $gray-lighter;
   border: 1px solid white;
   text-align: left;
 }
@@ -108,7 +107,6 @@ td.day div.number {
 }
 
 .table > tbody > tr > td.day_from_other_month, table.calendar tbody tr:hover td.day_from_other_month {
-  background-color: lighten($warm-gray, 8);
   border: 1px solid white;
   height: 100px;
   min-width: 14%;
@@ -128,7 +126,6 @@ table.calendar td.beginner_friendly {
 h3.month a, h3.month a:hover {
   background: none;
   background-color: none;
-  color: $font-color;
 }
 
 
@@ -163,11 +160,6 @@ p.list_link, p.atra_ncs {
   float: left;
   min-height: 400px;
   width: 90%;
-}
-
-.category_root.hovering {
-  border-color: $highlight-color;
-  background-color: lighten($highlight-color, 33);
 }
 
 .disclosure {
@@ -357,7 +349,7 @@ table.base td.total_points {
 }
 
 .event_info {
-  padding-bottom: $line-height-computed;
+  padding-bottom: 16;
   text-align: center;
 }
 
@@ -375,7 +367,7 @@ table.base td.total_points {
 }
 
 .event_races .race:first-child {
-  padding-right: $line-height-computed;
+  padding-right: 16;
 }
 
 table.child_single_day_events, .source_events {
@@ -429,7 +421,7 @@ table.first_aid_providers td.name {
 }
 
 table.results {
-  margin-bottom: $line-height-computed * 2;
+  margin-bottom: 16 * 2;
 }
 
 table.results td.laps,
@@ -527,7 +519,7 @@ table.results.scores tr:last-child {
 }
 
 #person_notes {
-  height: $line-height-computed * 8;
+  height: 16 * 8;
 }
 
 .table-striped th.bar,
@@ -591,7 +583,6 @@ select#person_date_of_birth_3i, select#person_member_from_3i, select#person_memb
 }
 
 table.people div.aliases {
-  color: $gray;
   font-style: italic;
 }
 
@@ -599,15 +590,6 @@ table.people div.aliases {
   table.people .name {
     white-space: nowrap;
   }
-}
-
-.hovering,
-.table-striped tbody tr:nth-child(even).hovering td,
-.table-striped tbody tr:nth-child(odd).hovering td,
-.table-striped.hovering tbody tr:nth-child(even) td,
-.table-striped.hovering tbody tr:nth-child(odd) td {
-  border-color: $highlight-color;
-  background-color: lighten($highlight-color, 33);
 }
 
 /* Versions */
@@ -669,8 +651,6 @@ td.right, th.right {
 }
 
 .copyright {
-  color: $font-color-light;
-  font-size: $font-size-smaller;
   text-align: center;
 }
 

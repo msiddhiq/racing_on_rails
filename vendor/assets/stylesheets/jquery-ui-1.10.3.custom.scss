@@ -194,9 +194,6 @@
 	cursor: default;
 }
 
-.ui-autocomplete li {
-  border-top: 1px solid $light-gray;
-}
 .ui-button {
 	display: inline-block;
 	position: relative;
@@ -804,23 +801,6 @@ body .ui-tooltip {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 }
-.ui-widget-content {
-	border: 1px solid $gray;
-	background: $white;
-	color: $font-color;
-}
-.ui-widget-content a {
-	color: $font-color;
-}
-.ui-widget-header {
-	border: none;
-	background: #eeeeee;
-	color: $font-color;
-	font-weight: bold;
-}
-.ui-widget-header a {
-	color: $font-color;
-}
 
 /* Interaction states
 ----------------------------------*/
@@ -828,7 +808,6 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: 1px solid #d3d3d3;
-	background: $white;
 	font-weight: normal;
 	color: #555555;
 }
@@ -844,10 +823,7 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid $light-gray;
-	background-color: $highlight-color;
 	font-weight: normal;
-	color: $link-color-hover;
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -857,13 +833,9 @@ body .ui-tooltip {
 	text-decoration: none;
 }
 
-.ui-state-hover a:hover {
-  color: $link-color-hover;
-}
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid $gray;
 	background: #ffffff;
 	font-weight: normal;
 	color: #212121;
@@ -1172,14 +1144,12 @@ body .ui-tooltip {
 
 /* Overlays */
 .ui-widget-overlay {
-	background: $gray;
 	opacity: .3;
 	filter: Alpha(Opacity=30);
 }
 .ui-widget-shadow {
 	margin: -8px 0 0 -8px;
 	padding: 8px;
-	background: $gray;
 	opacity: .3;
 	filter: Alpha(Opacity=30);
 	border-radius: 8px;

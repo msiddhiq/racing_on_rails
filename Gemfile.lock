@@ -97,15 +97,9 @@ GEM
       activerecord (>= 3.2)
       activesupport (>= 3.2)
       request_store (~> 1.0)
-    autoprefixer-rails (5.1.7.1)
-      execjs
-      json
     bcrypt (3.1.10)
     bootstrap-datepicker-rails (1.4.0)
       railties (>= 3.0)
-    bootstrap-sass (3.3.4.1)
-      autoprefixer-rails (>= 5.0.0.1)
-      sass (>= 3.2.19)
     brakeman (3.0.2)
       erubis (~> 2.6)
       fastercsv (~> 1.5)
@@ -412,7 +406,6 @@ DEPENDENCIES
   authlogic
   bcrypt
   bootstrap-datepicker-rails
-  bootstrap-sass
   brakeman
   bullet
   bundler

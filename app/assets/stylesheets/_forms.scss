@@ -1,30 +1,10 @@
-@media (min-width: $screen-sm-min) {
-  .form-horizontal label.control-label {
-    padding-left: 30px;
-    padding-right: 0px;
-  }
-}
-
 .form-control {
   padding-left: 6px;
   padding-right: 6px;
 }
 
-label {
-  color: $gray;
-  font-weight: bold;
-}
-
-input[type="text"] {
-  color: $form-color;
-}
-
 .form-group {
   margin-bottom: 8px;
-}
-
-.form-horizontal .check_boxes {
-  margin-bottom: $line-height-computed;
 }
 
 .form-horizontal .check_boxes .form-group {
@@ -58,22 +38,12 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
-legend {
-  font-size: $font-size-base;
-  font-weight: bold;
-}
-
-fieldset {
-  padding-bottom: $line-height-computed;
-}
-
 .editable {
   border: 1px solid transparent;
   border-radius: 4px;
   margin-bottom: -4px;
   margin-left: -3px;
   margin-top: -4px;
-  min-height: $line-height-computed + 6;
   min-width: 40px;
   padding: 3px;
 }
@@ -94,10 +64,6 @@ table.base td.numeric .editable input {
   width: 80px;
 }
 
-.editable:hover {
-  border: 1px solid $highlight-color;
-}
-
 .editable.editing {
   position: absolute;
 }
@@ -107,9 +73,6 @@ table.base td.numeric .editable input {
 }
 
 .editable.saving input {
-  background-color: lighten($input-border, 30);
-  border-color: $input-border;
-  color: $input-border;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -123,17 +86,8 @@ table.base td.numeric.editable_column {
   width: 17em;
   padding: .2em .2em 0;
   display: none;
-  border-color: $highlight-color;
   outline: 0;
   outline: thin dotted \9;
-  /* IE6-9 */
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($highlight-color, 0.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($highlight-color, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba($highlight-color, 0.6);
-}
-
-.ui-datepicker.ui-widget-content {
-  border-color: $highlight-color;
 }
 
 .bootstrap-datetimepicker-widget td.active, .bootstrap-datetimepicker-widget td.active:hover {

@@ -3,8 +3,6 @@
  *= require jquery_ujs
  *= require jquery-ui
  *= require jquery.jeditable
- *= require bootstrap
- *= require bootstrap-datepicker/core
  *= require_self
 */
 function autoComplete(model, attribute, path) {
